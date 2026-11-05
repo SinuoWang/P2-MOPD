@@ -36,22 +36,6 @@ After training, $\alpha$ is folded into the weights, so the output is a standard
   <img src="assets/fig_main_recovery.png" width="55%" alt="Average recovery over training">
 </p>
 
-## Main results
-
-Four domains (MedQA, CaseHOLD, FinQA, IFBench), Qwen3-4B and Qwen3-1.7B students, 100 training steps. Recovery is $(s - s_{\text{base}})/(s_{\text{teacher}} - s_{\text{base}})$ per domain; scores are avg@3. P²-MOPD, MOPD (TA init) and IM-MOPD are three-seed means.
-
-| Method | 4B Avg. Recovery | 4B Worst | 1.7B Avg. Recovery | 1.7B Worst |
-|---|---:|---:|---:|---:|
-| TA merge (untrained) | 42.98 | 23.67 | 32.41 | 17.15 |
-| MOPD | 46.80 | -53.94 | -15.74 | -261.18 |
-| MOPD (SFT warm-up) | 66.15 | 8.32 | 37.13 | -38.72 |
-| MOPD (TA init) | 83.13 | 47.22 | 80.93 | 32.03 |
-| Open-MOPD | 84.20 | 56.55 | 79.79 | 44.99 |
-| IM-MOPD | 88.02 | 84.12 | 67.81 | 48.73 |
-| **P²-MOPD (ours)** | **94.85** | **89.42** | **94.74** | **88.01** |
-
-Full per-domain scores, ablations and analyses are in the paper.
-
 ## Roadmap
 
 - [ ] P²-MOPD training (module, layer and model coefficient granularity)
