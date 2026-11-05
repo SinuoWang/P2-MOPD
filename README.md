@@ -36,14 +36,6 @@ After training, $\alpha$ is folded into the weights, so the output is a standard
   <img src="assets/fig_main_recovery.png" width="55%" alt="Average recovery over training">
 </p>
 
-## Roadmap
-
-- [ ] P²-MOPD training (module, layer and model coefficient granularity)
-- [ ] MOPD baselines from the same task-arithmetic start
-- [ ] Evaluation scripts for MedQA, CaseHOLD, FinQA and IFBench
-- [ ] Analysis scripts (task-vector projection, learned coefficients)
-- [ ] Trained checkpoints
-
 ## Citation
 
 If you find this work useful, please cite:
