@@ -31,7 +31,6 @@ After training, $\alpha$ is folded into the weights, so the output is a standard
 - **Faster.** P²-MOPD surpasses the final average recovery of MOPD from the same task-arithmetic start after half the training steps, at both 1.7B and 4B.
 - **More balanced.** Worst-domain recovery rises from 47.2% / 32.0% to 89.4% / 88.0% (4B / 1.7B), and the across-domain std of recovery falls from 21.8 / 28.4 to 4.6 / 4.8.
 - **Interpretable.** The learned mixing coefficients consistently identify the teacher the student most needs (the medical coefficient rises from 0.25 to 0.63 / 0.65), without any validation data.
-- **Cheap at inference.** The released model is a plain checkpoint; training adds only about $10^3$ coefficients.
 
 <p align="center">
   <img src="assets/fig_main_recovery.png" width="55%" alt="Average recovery over training">
