@@ -30,7 +30,7 @@ After training, $\alpha$ is folded into the weights, so the output is a standard
 
 - **Faster.** P²-MOPD surpasses the final average recovery of MOPD from the same task-arithmetic start after half the training steps, at both 1.7B and 4B.
 - **More balanced.** Worst-domain recovery rises from 47.2% / 32.0% to 89.4% / 88.0% (4B / 1.7B), and the across-domain std of recovery falls from 21.8 / 28.4 to 4.6 / 4.8.
-- **Interpretable.** The learned mixing coefficients consistently identify the teacher the student most needs (the medical coefficient rises from 0.25 to 0.63 / 0.65), without any validation data.
+- **Stable and interpretable.** The learned mixing coefficients are reproducible: the mean coefficient of each teacher agrees across three seeds to within 0.01, so the mixture is learned from the experts and the student rather than left to chance. They also consistently identify the teacher the student most needs (the medical coefficient rises from 0.25 to 0.63 / 0.65), without any validation data.
 
 <p align="center">
   <img src="assets/fig_main_recovery.png" width="55%" alt="Average recovery over training">
