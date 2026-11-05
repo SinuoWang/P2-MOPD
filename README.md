@@ -4,12 +4,11 @@
 
 Sinuo Wang, Jiacheng Lu, Zeyu Zhang, Maojia Song, Rui Sun, Beidi Luan, Yutong Xie, Jing Li, Daxin Jiang, Qi Wu, Zuo Bai
 
-[![Paper](https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg)](#)
-[![Code](https://img.shields.io/badge/code-coming%20soon-b6797d.svg)](#code-release)
+[![arXiv](https://img.shields.io/badge/arXiv-2611.03953-b31b1b.svg)](https://arxiv.org/abs/2611.03953)
 
 </div>
 
-> **Code release in progress.** This repository will host the official implementation of P²-MOPD. Training, evaluation and analysis code will be added here; see [Code release](#code-release) for the plan.
+This repository hosts the official implementation of [P²-MOPD](https://arxiv.org/abs/2611.03953).
 
 ## Overview
 
@@ -54,17 +53,13 @@ Four domains (MedQA, CaseHOLD, FinQA, IFBench), Qwen3-4B and Qwen3-1.7B students
 
 Full per-domain scores, ablations and analyses are in the paper.
 
-## Code release
-
-The code is being cleaned up and will be released in this repository. Planned contents:
+## Roadmap
 
 - [ ] P²-MOPD training (module, layer and model coefficient granularity)
 - [ ] MOPD baselines from the same task-arithmetic start
 - [ ] Evaluation scripts for MedQA, CaseHOLD, FinQA and IFBench
 - [ ] Analysis scripts (task-vector projection, learned coefficients)
 - [ ] Trained checkpoints
-
-Watch or star the repository to be notified when the code is available.
 
 ## Citation
 
@@ -74,7 +69,7 @@ If you find this work useful, please cite:
 @article{wang2026p2mopd,
   title   = {P$^2$-MOPD: Accelerating Multi-Teacher On-Policy Distillation via Parameter Priors},
   author  = {Wang, Sinuo and Lu, Jiacheng and Zhang, Zeyu and Song, Maojia and Sun, Rui and Luan, Beidi and Xie, Yutong and Li, Jing and Jiang, Daxin and Wu, Qi and Bai, Zuo},
-  journal = {arXiv preprint},
+  journal = {arXiv preprint arXiv:2611.03953},
   year    = {2026}
 }
 ```
